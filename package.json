@@ -1,0 +1,16 @@
+{
+  "name": "eicheljagd",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prep": "node prep.js",
+    "android": "node prep.js && npx cap add android && node patch-android.js && npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "peerjs": "1.5.4",
+    "three": "0.128.0"
+  },
+  "devDependencies": { "@capacitor/cli": "^6.1.2" }
+}

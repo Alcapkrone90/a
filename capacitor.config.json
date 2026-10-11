@@ -1,0 +1,7 @@
+{
+  "appId": "de.meister.eicheljagd",
+  "appName": "Eicheljagd",
+  "webDir": "www",
+  "backgroundColor": "#9ad8ff",
+  "server": { "androidScheme": "https" }
+}

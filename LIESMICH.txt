@@ -1,0 +1,21 @@
+EICHELJAGD - ANDROID-APP + ONLINE-ZWEISPIELER
+
+APK BAUEN - EINFACHSTER WEG (ohne Android Studio):
+1. Kostenloses GitHub-Konto, neues Repository anlegen.
+2. Den ganzen Inhalt dieses Ordners hochladen (auch den versteckten Ordner .github).
+3. Im Repository: Actions -> "APK bauen" -> Run workflow (dauert ca. 5-8 Min.).
+4. Fertigen Lauf oeffnen, unten "Eicheljagd-APK" herunterladen, entpacken.
+5. app-debug.apk aufs Handy kopieren und installieren
+   (Android fragt einmal nach "Installation aus unbekannten Quellen").
+
+ALTERNATIV LOKAL: build-apk.bat (braucht Node.js, JDK 17, Android Studio).
+
+STEUERUNG: Joystick links, gelber Blitz-Knopf rechts = Boost.
+
+ONLINE SPIELEN:
+- "Raum erstellen" -> 5-stelliger Code. Der Freund gibt ihn unter "Beitreten" ein.
+- Der "Link teilen"-Knopf verschickt Code + Link. Ein Link oeffnet das Spiel im Browser,
+  dafuer muss eine Webversion online liegen: "npm install", "npm run prep", dann den
+  Ordner www z.B. auf app.netlify.com/drop ziehen. Die Adresse in src/index.html bei
+  SHARE_URL eintragen (z.B. 'https://deinname.netlify.app/') und APK neu bauen.
+- Beide brauchen Internet. Der Host rechnet das Spiel, der Gast sendet nur seine Steuerung.
